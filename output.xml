@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.7.1 on win32)" generated="20191023 16:51:02.770" rpa="false">
+<suite id="s1" name="Lab12" source="D:\603021025-3\QA\Lab12\lab12.robot">
+<test id="s1-t1" name="Go to Google">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${Google URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20191023 16:51:02.895" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.co.th'.</msg>
+<status status="PASS" starttime="20191023 16:51:02.895" endtime="20191023 16:51:06.489"></status>
+</kw>
+<status status="PASS" starttime="20191023 16:51:02.894" endtime="20191023 16:51:06.490" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Go to CS_KKU">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>q</arg>
+<arg>${CS_KKU URL}</arg>
+</arguments>
+<msg timestamp="20191023 16:51:06.494" level="INFO">Typing text 'https://www.cs.kku.ac.th/index.php/th/' into text field 'q'.</msg>
+<status status="PASS" starttime="20191023 16:51:06.493" endtime="20191023 16:51:06.719"></status>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<arguments>
+<arg>tsf</arg>
+</arguments>
+<msg timestamp="20191023 16:51:06.720" level="INFO">Submitting form 'tsf'.</msg>
+<status status="PASS" starttime="20191023 16:51:06.719" endtime="20191023 16:51:07.788"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>CS KKU - มหาวิทยาลัยขอนแก่น</arg>
+</arguments>
+<status status="PASS" starttime="20191023 16:51:07.789" endtime="20191023 16:51:07.822"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20191023 16:51:07.823" endtime="20191023 16:51:09.970"></status>
+</kw>
+<status status="PASS" starttime="20191023 16:51:06.492" endtime="20191023 16:51:09.971" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191023 16:51:02.771" endtime="20191023 16:51:09.976"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Lab12">Lab12</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
